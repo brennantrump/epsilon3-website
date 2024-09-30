@@ -53,6 +53,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #004d40;
+    text-decoration: none;
 }
 
 /* Image at the Top */
@@ -81,20 +82,31 @@ nav ul li a:hover {
     background-color: #004d40;
 }
 
-/* Styling for the feature introduction text */
+/* Feature Intro Text */
 .feature-intro {
-    font-size: 1.25rem; /* Make the text larger */
-    font-weight: bold;  /* Bold the text */
-    color: #004d40;     /* Change the color to a more noticeable one */
+    font-size: 1.25rem; /* Larger font size for emphasis */
+    font-weight: bold;  /* Make it bold */
+    color: #004d40;     /* A distinctive green color */
     margin-bottom: 10px; /* Add space below the text */
     text-align: center;  /* Center the text */
 }
 
-/* List styling remains the same */
+/* List styling */
 .section-content ul {
     list-style: disc;
     padding-left: 20px;
-    color: #333; /* Standard color for the list */
+    color: #333;
+}
+
+/* Hide all section contents by default */
+.section-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
