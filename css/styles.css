@@ -184,3 +184,13 @@ footer p {
         font-size: 1rem;
     }
 }
+
+#top-image img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a light shadow */
+}
+
