@@ -3,86 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epsilon 3 - The Future of Innovation</title>
+    <title>Epsilon 3 - The Flying Car</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <h1>Welcome to Epsilon 3</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#options">Options</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li>
+                    <a href="#">More</a>
+                    <ul class="dropdown">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Image of Epsilon 3 Car at the Top -->
-    <div id="top-image">
-        <img src="images/epsilon-3-car.png" alt="Epsilon 3 Flying Car" style="width:100%; max-width:800px; display:block; margin: 20px auto;">
-    </div>    
-
-    <!-- Features Section -->
-    <section>
-        <h2 onclick="toggleSection('features-content')" class="section-title">Features</h2>
-        <div id="features-content" class="section-content">
-            <p>The Epsilon 3 Flying Car is packed with features that redefine personal transportation:</p>
-            <ul>
-                <li>Vertical Takeoff and Landing (VTOL): Take off and land anywhere with ease.</li>
-                <li>Dual-Mode Operation: Switch seamlessly between flying and driving modes.</li>
-                <li>Electric Powertrain: Powered by a fully electric engine with zero emissions.</li>
-                <li>Autonomous Navigation: Advanced autopilot for both air and ground travel.</li>
-                <li>Safety Parachute System: Integrated parachute for emergency landings.</li>
-                <li>Luxury Interior: Comfort-focused cabin with leather seats and advanced infotainment.</li>
-            </ul>
-        </div>
+    <section class="hero">
+        <h1>Epsilon 3 - The Ultimate Flying Car</h1>
+        <p>Redefining the Future of Transportation</p>
     </section>
 
-    <!-- Options Section -->
-    <section>
-        <h2 onclick="toggleSection('options-content')" class="section-title">Options</h2>
-        <div id="options-content" class="section-content">
-            <p>Customize your Epsilon 3 Flying Car to match your personal style and needs:</p>
-            <ul>
-                <li>Exterior Colors: Choose from Midnight Black, Sky Blue, Solar Yellow, or Custom.</li>
-                <li>Battery Upgrade: Opt for a larger battery pack for extended flight time (up to 300 miles).</li>
-                <li>Interior Finish: Select premium leather finishes in Beige, Jet Black, or White.</li>
-                <li>Advanced Autopilot: Upgrade to full autonomous flight and driving capabilities.</li>
-                <li>Entertainment System: Choose from a standard or premium 15" touchscreen with integrated streaming services.</li>
-            </ul>
-        </div>
+    <section id="features">
+        <h2>Epsilon 3 Features</h2>
+        <p>The Epsilon 3 is not just a car. It’s a revolutionary flying vehicle that seamlessly transitions between road and air travel. Key features include:</p>
+        <ul>
+            <li>**Hybrid Drive System**: Switch effortlessly between driving on the road and flying above traffic.</li>
+            <li>**Vertical Takeoff and Landing (VTOL)**: No need for a runway; take off and land wherever you are.</li>
+            <li>**Advanced Safety System**: Autonomous control systems for safe flight, landing, and collision avoidance.</li>
+            <li>**Luxury Interior**: A premium cabin experience with leather seats, in-flight entertainment, and more.</li>
+            <li>**Eco-friendly**: Powered by an electric engine, reducing emissions and helping the environment.</li>
+        </ul>
     </section>
 
-    <!-- Prices Section -->
-    <section>
-        <h2 onclick="toggleSection('prices-content')" class="section-title">Prices</h2>
-        <div id="prices-content" class="section-content">
-            <p>The Epsilon 3 Flying Car is available in multiple configurations:</p>
-            <ul>
-                <li>Standard Model: Starting at $499,000 - Includes basic features and a 200-mile range.</li>
-                <li>Premium Model: Starting at $599,000 - Adds luxury interior and extended flight range (300 miles).</li>
-                <li>Custom Model: Starting at $750,000 - Fully customizable with all available upgrades.</li>
-                <li>Battery Upgrade: $50,000 - Increases the flight range by 100 miles.</li>
-                <li>Advanced Autopilot: $30,000 - Full autonomous flight and driving capabilities.</li>
-            </ul>
-        </div>
+    <section id="options">
+        <h2>Epsilon 3 Options</h2>
+        <p>Choose from various customization options to make your Epsilon 3 perfect for your lifestyle:</p>
+        <ul>
+            <li>**Color Options**: Available in Midnight Black, Sky Blue, and Pearl White.</li>
+            <li>**Interior**: Customize your interior with premium leather, wood, or carbon fiber finishes.</li>
+            <li>**Engine Options**: Choose between the standard electric engine or a high-performance model for faster speeds.</li>
+            <li>**Technology**: Add on advanced features such as heads-up display, surround sound system, and more.</li>
+        </ul>
     </section>
 
-    <!-- Login Section -->
-    <section>
-        <h2 onclick="toggleSection('login-content')" class="section-title">Login</h2>
-        <div id="login-content" class="section-content">
-            <form action="#" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required><br><br>
+    <section id="prices">
+        <h2>Epsilon 3 Prices</h2>
+        <p>The Epsilon 3 is available at competitive pricing, starting at:</p>
+        <ul>
+            <li>**Standard Model**: $499,999</li>
+            <li>**High-Performance Model**: $699,999</li>
+            <li>**Custom Model**: Pricing based on your custom configuration</li>
+        </ul>
+        <p>Financing options are available upon request. Contact us to learn more.</p>
+    </section>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
+    <section id="login">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
 
-                <button type="submit">Login</button>
-            </form>
-        </div>
+    <section id="search">
+        <h2>Search Our Site</h2>
+        <form action="#" method="get">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit">Search</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Epsilon 3 | <a href="#contact">Contact Us</a></p>
+        <p>&copy; 2024 Epsilon 3 - The Ultimate Flying Car | <a href="#contact">Contact Us</a></p>
     </footer>
-
-    <!-- Link to JavaScript file -->
-    <script src="js/main.js"></script>
 </body>
 </html>
