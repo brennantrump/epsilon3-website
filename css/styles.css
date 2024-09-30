@@ -115,7 +115,7 @@ section:hover {
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #00796b;
+    color: #02ffe1;
 }
 
 section p {
@@ -137,7 +137,7 @@ form input, form button {
 }
 
 form button {
-    background-color: #00796b;
+    background-color: #00fde0;
     color: white;
     border: none;
     cursor: pointer;
@@ -145,7 +145,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #004d40;
+    background-color: #00ffd5;
 }
 
 /* Footer Styles */
