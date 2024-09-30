@@ -81,15 +81,20 @@ nav ul li a:hover {
     background-color: #004d40;
 }
 
-/* Hide all section contents by default */
-.section-content {
-    display: none;
-    padding: 20px;
-    background-color: #fff;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Styling for the feature introduction text */
+.feature-intro {
+    font-size: 1.25rem; /* Make the text larger */
+    font-weight: bold;  /* Bold the text */
+    color: #004d40;     /* Change the color to a more noticeable one */
+    margin-bottom: 10px; /* Add space below the text */
+    text-align: center;  /* Center the text */
+}
+
+/* List styling remains the same */
+.section-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #333; /* Standard color for the list */
 }
 
 /* Footer */
