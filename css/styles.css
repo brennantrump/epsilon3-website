@@ -194,3 +194,18 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a light shadow */
 }
 
+/* Hide all dropdown sections by default */
+.dropdown-content {
+    display: none;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show the dropdown content when it's activated */
+.dropdown-content.active {
+    display: block;
+}
