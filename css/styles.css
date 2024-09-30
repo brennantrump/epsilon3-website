@@ -25,6 +25,36 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Navigation Menu */
+nav {
+    background-color: #00796b;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004d40;
+}
+
 /* Image at the Top */
 #top-image img {
     width: 100%;
@@ -69,4 +99,9 @@ footer {
     text-align: center;
     padding: 20px;
     width: 100%;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }

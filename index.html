@@ -9,6 +9,15 @@
 <body>
     <header>
         <h1>Welcome to Epsilon 3</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#features-content">Features</a></li>
+                <li><a href="#options-content">Options</a></li>
+                <li><a href="#prices-content">Prices</a></li>
+                <li><a href="#login-content">Login</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Image of Epsilon 3 Car at the Top -->
@@ -18,7 +27,7 @@
 
     <!-- Features Section -->
     <section>
-        <h2 onclick="toggleSection('features-content')" class="section-title">Features</h2>
+        <h2 onclick="toggleSection('features-content')" class="section-title" id="features-content-title">Features</h2>
         <div id="features-content" class="section-content">
             <p>The Epsilon 3 Flying Car is packed with features that redefine personal transportation:</p>
             <ul>
@@ -34,7 +43,7 @@
 
     <!-- Options Section -->
     <section>
-        <h2 onclick="toggleSection('options-content')" class="section-title">Options</h2>
+        <h2 onclick="toggleSection('options-content')" class="section-title" id="options-content-title">Options</h2>
         <div id="options-content" class="section-content">
             <p>Customize your Epsilon 3 Flying Car to match your personal style and needs:</p>
             <ul>
@@ -49,7 +58,7 @@
 
     <!-- Prices Section -->
     <section>
-        <h2 onclick="toggleSection('prices-content')" class="section-title">Prices</h2>
+        <h2 onclick="toggleSection('prices-content')" class="section-title" id="prices-content-title">Prices</h2>
         <div id="prices-content" class="section-content">
             <p>The Epsilon 3 Flying Car is available in multiple configurations:</p>
             <ul>
@@ -64,7 +73,7 @@
 
     <!-- Login Section -->
     <section>
-        <h2 onclick="toggleSection('login-content')" class="section-title">Login</h2>
+        <h2 onclick="toggleSection('login-content')" class="section-title" id="login-content-title">Login</h2>
         <div id="login-content" class="section-content">
             <form action="#" method="post">
                 <label for="username">Username:</label>
