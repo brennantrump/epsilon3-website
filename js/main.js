@@ -1,14 +1,18 @@
 // Function to toggle sections (Dropdown functionality)
 function toggleSection(sectionId, forceShow = false) {
     const section = document.getElementById(sectionId);
-    if (forceShow) {
-        section.style.display = "block"; // Force show the section if needed
-    } else {
-        if (section.style.display === "block") {
-            section.style.display = "none";
-        } else {
+    
+    // Ensure the section exists
+    if (section) {
+        // If forced to show, ensure the section is shown
+        if (forceShow) {
             section.style.display = "block";
+        } else {
+            // Toggle display between block and none
+            section.style.display = section.style.display === "block" ? "none" : "block";
         }
+    } else {
+        console.error("Section with id " + sectionId + " not found.");
     }
 }
 
@@ -21,9 +25,9 @@ document.getElementById('search-button').addEventListener('click', function() {
     sections.forEach(section => {
         const sectionText = section.innerText.toLowerCase();
         const sectionContent = section.querySelector('.section-content');
-        
+
         if (sectionText.includes(query)) {
-            // If the section contains the query, show it and highlight it
+            // Show and highlight the section if a match is found
             sectionContent.style.backgroundColor = '#ffeb3b'; // Highlight matching section
             toggleSection(sectionContent.id, true); // Show the section if hidden
         } else {
