@@ -29,16 +29,18 @@ header h1 {
 nav {
     background-color: #00796b;
     padding: 10px 0;
+    display: flex; /* Added to align search bar */
+    justify-content: space-between; /* Space between links and search bar */
     margin-bottom: 20px;
 }
 
 nav ul {
     list-style: none;
-    text-align: center;
+    padding-left: 0;
+    display: flex; /* Make the links display inline */
 }
 
 nav ul li {
-    display: inline-block;
     margin: 0 15px;
 }
 
@@ -54,6 +56,33 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #004d40;
     text-decoration: none;
+}
+
+/* Search Form Styling */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #00362e;
 }
 
 /* Image at the Top */
