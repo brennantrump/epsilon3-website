@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epsilon 3 - The Future of Innovation</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <h1>Welcome to Epsilon 3</h1>
@@ -27,14 +29,16 @@
 
     <!-- Image of Epsilon 3 Car at the Top -->
     <div id="top-image">
-        <img src="images/epsilon-3-car.png" alt="Epsilon 3 Flying Car" style="width:100%; max-width:800px; display:block; margin: 20px auto;">
+        <img src="images/epsilon-3-car.png" alt="Epsilon 3 Flying Car"
+            style="width:100%; max-width:800px; display:block; margin: 20px auto;">
     </div>
 
     <!-- Features Section -->
     <section>
         <h2 onclick="toggleSection('features-content')" class="section-title">Features</h2>
         <div id="features-content" class="section-content">
-            <p class="feature-intro">The Epsilon 3 Flying Car is packed with features that redefine personal transportation:</p>
+            <p class="feature-intro">The Epsilon 3 Flying Car is packed with features that redefine personal
+                transportation:</p>
             <ul>
                 <li>Vertical Takeoff and Landing (VTOL): Take off and land anywhere with ease.</li>
                 <li>Dual-Mode Operation: Switch seamlessly between flying and driving modes.</li>
@@ -56,7 +60,8 @@
                 <li>Battery Upgrade: Opt for a larger battery pack for extended flight time (up to 300 miles).</li>
                 <li>Interior Finish: Select premium leather finishes in Beige, Jet Black, or White.</li>
                 <li>Advanced Autopilot: Upgrade to full autonomous flight and driving capabilities.</li>
-                <li>Entertainment System: Choose from a standard or premium 15" touchscreen with integrated streaming services.</li>
+                <li>Entertainment System: Choose from a standard or premium 15" touchscreen with integrated streaming
+                    services.</li>
             </ul>
         </div>
     </section>
@@ -68,7 +73,8 @@
             <p>The Epsilon 3 Flying Car is available in multiple configurations:</p>
             <ul>
                 <li>Standard Model: Starting at $499,000 - Includes basic features and a 200-mile range.</li>
-                <li>Premium Model: Starting at $599,000 - Adds luxury interior and extended flight range (300 miles).</li>
+                <li>Premium Model: Starting at $599,000 - Adds luxury interior and extended flight range (300 miles).
+                </li>
                 <li>Custom Model: Starting at $750,000 - Fully customizable with all available upgrades.</li>
                 <li>Battery Upgrade: $50,000 - Increases the flight range by 100 miles.</li>
                 <li>Advanced Autopilot: $30,000 - Full autonomous flight and driving capabilities.</li>
@@ -92,6 +98,25 @@
         </div>
     </section>
 
+    <!-- Response Form Section -->
+    <section id="response-form">
+        <h2 class="section-title">Submit Your Response</h2>
+        <div class="form-content">
+            <form action="#" method="POST" id="responseForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 Epsilon 3 | <a href="#contact">Contact Us</a></p>
     </footer>
@@ -99,4 +124,5 @@
     <!-- Link to JavaScript file -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

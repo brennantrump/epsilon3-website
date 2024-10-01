@@ -36,3 +36,24 @@ document.getElementById('search-button').addEventListener('click', function() {
         }
     });
 });
+
+// Handle form submission
+document.getElementById('responseForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Collect form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Process form data (you can send this to a backend or show a success message)
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Message:", message);
+
+    alert("Thank you for your response!");
+    
+    // Optionally, reset the form
+    document.getElementById('responseForm').reset();
+});
+
