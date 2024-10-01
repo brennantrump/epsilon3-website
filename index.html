@@ -11,84 +11,77 @@
         <h1>Welcome to Epsilon 3</h1>
         <!-- Navigation Menu -->
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#features-content">Features</a></li>
                 <li><a href="#options-content">Options</a></li>
                 <li><a href="#prices-content">Prices</a></li>
                 <li><a href="#login-content">Login</a></li>
             </ul>
-                <form action="#" method="get" class="search-form">
-                    <input type="text" placeholder="Search..." name="search">
-                    <button type="submit">Search</button>
-                </form>
+            <!-- Search bar -->
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" placeholder="Search..." name="search">
+                <button type="button" id="search-button">Search</button>
+            </form>
         </nav>
     </header>
 
     <!-- Image of Epsilon 3 Car at the Top -->
     <div id="top-image">
         <img src="images/epsilon-3-car.png" alt="Epsilon 3 Flying Car" style="width:100%; max-width:800px; display:block; margin: 20px auto;">
-    </div>    
+    </div>
 
     <!-- Features Section -->
-    <section>
-        <h2 onclick="toggleSection('features-content')" class="section-title" id="features-content-title">Features</h2>
-        <div id="features-content" class="section-content">
-            <p class="feature-intro">The Epsilon 3 Flying Car is packed with features that redefine personal transportation:</p>
-            <ul>
-                <li>Vertical Takeoff and Landing (VTOL): Take off and land anywhere with ease.</li>
-                <li>Dual-Mode Operation: Switch seamlessly between flying and driving modes.</li>
-                <li>Electric Powertrain: Powered by a fully electric engine with zero emissions.</li>
-                <li>Autonomous Navigation: Advanced autopilot for both air and ground travel.</li>
-                <li>Safety Parachute System: Integrated parachute for emergency landings.</li>
-                <li>Luxury Interior: Comfort-focused cabin with leather seats and advanced infotainment.</li>
-            </ul>
-        </div>
+    <section id="features-content">
+        <h2 class="section-title">Features</h2>
+        <p class="feature-intro">The Epsilon 3 Flying Car is packed with features that redefine personal transportation:</p>
+        <ul>
+            <li>Vertical Takeoff and Landing (VTOL): Take off and land anywhere with ease.</li>
+            <li>Dual-Mode Operation: Switch seamlessly between flying and driving modes.</li>
+            <li>Electric Powertrain: Powered by a fully electric engine with zero emissions.</li>
+            <li>Autonomous Navigation: Advanced autopilot for both air and ground travel.</li>
+            <li>Safety Parachute System: Integrated parachute for emergency landings.</li>
+            <li>Luxury Interior: Comfort-focused cabin with leather seats and advanced infotainment.</li>
+        </ul>
     </section>
 
     <!-- Options Section -->
-    <section>
-        <h2 onclick="toggleSection('options-content')" class="section-title" id="options-content-title">Options</h2>
-        <div id="options-content" class="section-content">
-            <p class="feature-intro">Customize your Epsilon 3 Flying Car to match your personal style and needs:</p>
-            <ul>
-                <li>Exterior Colors: Choose from Midnight Black, Sky Blue, Solar Yellow, or Custom.</li>
-                <li>Battery Upgrade: Opt for a larger battery pack for extended flight time (up to 300 miles).</li>
-                <li>Interior Finish: Select premium leather finishes in Beige, Jet Black, or White.</li>
-                <li>Advanced Autopilot: Upgrade to full autonomous flight and driving capabilities.</li>
-                <li>Entertainment System: Choose from a standard or premium 15" touchscreen with integrated streaming services.</li>
-            </ul>
-        </div>
+    <section id="options-content">
+        <h2 class="section-title">Options</h2>
+        <p>Customize your Epsilon 3 Flying Car to match your personal style and needs:</p>
+        <ul>
+            <li>Exterior Colors: Choose from Midnight Black, Sky Blue, Solar Yellow, or Custom.</li>
+            <li>Battery Upgrade: Opt for a larger battery pack for extended flight time (up to 300 miles).</li>
+            <li>Interior Finish: Select premium leather finishes in Beige, Jet Black, or White.</li>
+            <li>Advanced Autopilot: Upgrade to full autonomous flight and driving capabilities.</li>
+            <li>Entertainment System: Choose from a standard or premium 15" touchscreen with integrated streaming services.</li>
+        </ul>
     </section>
 
     <!-- Prices Section -->
-    <section>
-        <h2 onclick="toggleSection('prices-content')" class="section-title" id="prices-content-title">Prices</h2>
-        <div id="prices-content" class="section-content">
-            <p class="feature-intro">The Epsilon 3 Flying Car is available in multiple configurations:</p>
-            <ul>
-                <li>Standard Model: Starting at $499,000 - Includes basic features and a 200-mile range.</li>
-                <li>Premium Model: Starting at $599,000 - Adds luxury interior and extended flight range (300 miles).</li>
-                <li>Custom Model: Starting at $750,000 - Fully customizable with all available upgrades.</li>
-                <li>Battery Upgrade: $50,000 - Increases the flight range by 100 miles.</li>
-                <li>Advanced Autopilot: $30,000 - Full autonomous flight and driving capabilities.</li>
-            </ul>
-        </div>
+    <section id="prices-content">
+        <h2 class="section-title">Prices</h2>
+        <p>The Epsilon 3 Flying Car is available in multiple configurations:</p>
+        <ul>
+            <li>Standard Model: Starting at $499,000 - Includes basic features and a 200-mile range.</li>
+            <li>Premium Model: Starting at $599,000 - Adds luxury interior and extended flight range (300 miles).</li>
+            <li>Custom Model: Starting at $750,000 - Fully customizable with all available upgrades.</li>
+            <li>Battery Upgrade: $50,000 - Increases the flight range by 100 miles.</li>
+            <li>Advanced Autopilot: $30,000 - Full autonomous flight and driving capabilities.</li>
+        </ul>
     </section>
 
     <!-- Login Section -->
-    <section>
-        <h2 onclick="toggleSection('login-content')" class="section-title" id="login-content-title">Login</h2>
-        <div id="login-content" class="section-content">
-            <form action="#" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required><br><br>
+    <section id="login-content">
+        <h2 class="section-title">Login</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
 
-                <button type="submit">Login</button>
-            </form>
-        </div>
+            <button type="submit">Login</button>
+        </form>
     </section>
 
     <footer>
@@ -97,5 +90,5 @@
 
     <!-- Link to JavaScript file -->
     <script src="js/main.js"></script>
-</body>  
+</body>
 </html>
