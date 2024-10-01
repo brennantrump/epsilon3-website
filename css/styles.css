@@ -55,7 +55,6 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #004d40;
-    text-decoration: none;
 }
 
 /* Search Form Styling */
@@ -85,16 +84,6 @@ nav ul li a:hover {
     background-color: #00362e;
 }
 
-/* Image at the Top */
-#top-image img {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 /* Section title styling */
 .section-title {
     background-color: #00796b;
@@ -113,11 +102,11 @@ nav ul li a:hover {
 
 /* Feature Intro Text */
 .feature-intro {
-    font-size: 1.25rem; /* Larger font size */
-    font-weight: bold;  /* Make it bold */
-    color: #004d40;     /* Make it a standout color */
-    margin-bottom: 15px; /* Add space below the text */
-    text-align: center;  /* Center align the text */
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #004d40;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* List styling */
