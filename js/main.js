@@ -1,12 +1,14 @@
-// JavaScript to toggle sections
-function toggleSection(sectionId) {
-    var section = document.getElementById(sectionId);
-
-    // Toggle between showing and hiding the section
-    if (section.style.display === "block") {
-        section.style.display = "none";
+// Function to toggle sections (Dropdown functionality)
+function toggleSection(sectionId, forceShow = false) {
+    const section = document.getElementById(sectionId);
+    if (forceShow) {
+        section.style.display = "block"; // Force show the section if needed
     } else {
-        section.style.display = "block";
+        if (section.style.display === "block") {
+            section.style.display = "none";
+        } else {
+            section.style.display = "block";
+        }
     }
 }
 
@@ -18,10 +20,15 @@ document.getElementById('search-button').addEventListener('click', function() {
     // Loop through sections to find matching text
     sections.forEach(section => {
         const sectionText = section.innerText.toLowerCase();
+        const sectionContent = section.querySelector('.section-content');
+        
         if (sectionText.includes(query)) {
-            section.style.backgroundColor = '#ffeb3b';  // Highlight matching section
+            // If the section contains the query, show it and highlight it
+            sectionContent.style.backgroundColor = '#ffeb3b'; // Highlight matching section
+            toggleSection(sectionContent.id, true); // Show the section if hidden
         } else {
-            section.style.backgroundColor = '';  // Reset section background if no match
+            // Reset the background color if no match
+            sectionContent.style.backgroundColor = '';
         }
     });
 });
